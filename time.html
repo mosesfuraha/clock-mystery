@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Mastery Project</title>
+    <link rel="stylesheet" href="time.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="time-container">
+        <div class="settings">
+          <label for="formatToggle">24 Hour Format:</label>
+          <input type="checkbox" id="formatToggle" checked />
+
+          <label for="timeZone">Select Time Zone:</label>
+          <select id="timeZone">
+            <option value="0" selected>UTC+00:00</option>
+            <option value="2">Central African Time (UTC+02:00)</option>
+            <option value="1">Central European Time (UTC+01:00)</option>
+          </select>
+        </div>
+        <div class="clock">
+          <span id="hrs">00</span>
+          <span>:</span>
+          <span id="min">00</span>
+          <span>:</span>
+          <span id="sec">00</span>
+          <span id="ampm"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="time.js"></script>
+  </body>
+</html>
